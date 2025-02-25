@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+/* body{
+    color: aliceblue;
+    background-color: #000000;
+} */
+.main-container{
+    display: flex;
+    height: auto;
+}
+
+.sidebar{
+    position: fixed;
+    width: 16%;
+    height: 100vh;
+    border-right: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* z-index: 100;
+    top: 0;
+    /* left: 0; */ 
+    /* background-color: #333; */
+    /* position: fixed */
+}
+.title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    /* border: 2px solid rgb(0, 113, 68); */
+}
+.title h3{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    width: 100%;
+    padding-left: 15px;
+    /* border: 2px solid black; */
+}
+
+.menu{
+    width: 100%;
+    height: 65%;
+    /* border: 2px solid rgb(255, 0, 115); */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;; */
+}
+.menu-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+.menu-bottom .nav{
+    /* display: flex;
+    align-items: center; */
+    height: 42%;
+    /* border: 1px solid yellow; */
+}
+
+.nav{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    height: 13%;
+    /* border: 1px solid yellow;    */
+    padding-left: 15%;
+    gap: 13px;
+}
+
+.nav:hover{
+    background-color: rgb(81, 81, 81);
+    border-radius: 15px;
+    cursor: pointer;
+    /* margin: 1%; */
+}
+
+.mid-page{
+    width: 60%;
+    min-height: 100vh;
+    border-right: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 17.4%;
+    overflow: visible;
+}
+.story-container{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 15vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.story p{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+.story img{
+    border-radius: 50%;
+    border: 2px solid rgb(203, 1, 65);
+}
+
+.story img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.post-container{
+    width: 60%;
+    height: 90vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 2%;
+    padding: 2%; */
+}
+.post-header{
+    height: 10%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+.post-header .post-user{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+} 
+
+.post-header .post-user img{
+    border-radius: 50%;
+    border: 2px solid rgb(203, 1, 65);
+}
+
+.post-header .post-user img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.post-header .post-button button{
+    /* border: none; */
+    all: unset;
+    cursor: pointer;
+
+}
+.post-content{
+    height: 60%;
+    /* border: 1px solid green; */
+}
+
+
+
+.post-footer{
+    height: 30%;
+    border-bottom: 1px solid green;
+}
+
+.post-footer .post-interactions{
+    /* border: 1px solid green; */
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.post-footer .post-interactions .post-icons{
+    /* border: 1px solid green; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    gap: 3%;
+    padding-left: 1%
+}
+.post-footer .post-interactions .post-icons button{
+    all: unset;
+    cursor: pointer;
+    font-size: large;
+}
+.post-footer .post-interactions .post-icons button:hover{
+    opacity: 0.5;
+}
+.post-footer .post-interactions .post-save{
+    /* border: 1px solid green; */
+    width: 10%;
+    height: 100%;
+}
+.post-footer .post-interactions .post-save{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-footer .post-interactions .post-save button{
+    all: unset;
+    cursor: pointer;
+    font-size: large;
+}
+.post-footer .post-interactions .post-save button:hover{
+    opacity: 0.5;
+}
+.post-footer .post-likes{
+    /* border: 1px solid green; */
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+}
+
+
+
+.post-footer .post-caption{
+    /* border: 1px solid green; */
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+}
+
+.post-footer .post-comments{
+    /* border: 1px solid green; */
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+}
+.post-footer .post-comments p{
+    color: rgb(121, 122, 122);
+}
+
+
+.post-footer .post-add-comment{
+    /* border: 1px solid green; */
+    height: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+}
+
+.post-footer .post-add-comment .comment{
+    width: 90%;
+    height: 50%;
+    /* border: 1px solid green; */
+}
+.post-footer .post-add-comment .comment input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    all: unset;
+}
+
+.post-footer .post-add-comment .comment-sticker{
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-footer .post-add-comment .comment-sticker button{
+    all: unset;
+    cursor: pointer;
+    font-size: large;
+}
+
+.post-footer .post-add-comment .comment-sticker button:hover{
+    opacity: 0.5;
+}
