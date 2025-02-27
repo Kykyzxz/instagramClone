@@ -284,3 +284,187 @@
 .post-footer .post-add-comment .comment-sticker button:hover{
     opacity: 0.5;
 }
+
+
+/* right page */
+.right-page{
+    padding-top: 2%;
+    /* border: 1px solid black; */
+    width: 25%;
+    min-height: 100vh;
+    height: auto;
+}
+.suggestion-container{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.account{
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    padding-left: 2%;
+    padding-right: 10%;
+    height: 2.3%;
+    display: flex;
+
+}
+
+.profile-container{
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-container img{
+    border-radius: 50%;
+    border: 2px solid rgb(203, 1, 65);
+}
+
+.profile-container img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.name-container{
+    /* border: 1px solid green; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.username{
+    /* border: 1px solid green; */
+    height: 50%;
+    display: flex;
+    align-items:end;
+    padding-left: 2%;
+
+}
+.fullname{
+    /* border: 1px solid green; */
+    padding-left: 2%;
+    height: 50%;
+}
+.switch-btn{
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-btn button{
+    all: unset;
+    cursor: pointer;
+    color: rgb(0, 30, 255);
+}
+
+.switch-btn button:hover{
+    opacity: 0.5;
+}
+
+/* suggestions */
+
+.suggestion-title{
+    /* border: 1px solid green; */
+    width: 100%;
+    /* padding-left: 4%; */
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+}
+
+.suggestion-text{
+    /* border: 1px solid green; */
+    width: 70%;
+    display: flex;
+    padding-left: 4%;
+}
+
+.suggestion-all{
+    /* border: 1px solid green; */
+    width: 30%;
+    padding-left: 10%;
+    /* cursor: pointer; */
+}
+
+.suggestion-all p:hover{
+    /* border: 1px solid green; */
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* suggestion accounts */
+.suggestion-acc{
+    display: flex;
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    height: 2.3%;
+    padding-left: 2%;
+    padding-right: 10%;
+    margin-bottom: 7px;
+}
+
+.suggestion-profile{
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.suggestion-profile img{
+    border-radius: 50%;
+    /* border: 2px solid rgb(203, 1, 65); */
+}
+
+.suggestion-name{
+    /* height: 100%; */
+    /* border: 1px solid green; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2px;
+}
+
+.suggestion-username{
+    padding-left: 2%;
+    /* border: 1px solid green; */
+    height: 50%;
+    display: flex;
+    align-items: end;
+}
+
+.suggestion-fullname{
+    padding-left: 2%;
+    /* border: 1px solid green; */
+    height: 50%;
+    font-size: 0.85rem;
+}
+
+.suggestion-follow{
+    /* border: 1px solid green; */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestion-follow button{
+    all: unset;
+    cursor: pointer;
+    color: rgb(0, 30, 255);
+}
+
+.suggestion-follow button:hover{
+    opacity: 0.5;
+}
